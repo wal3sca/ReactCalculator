@@ -1,31 +1,137 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  width: 340px;
+  height: 540px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  background-image: linear-gradient(#9882a8, #768a6b, #687e87);
+}
+
+.screen {
+  grid-column: 1 / span 3;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  background: linear-gradient(
+    52deg,
+    #0adca6,
+    #dc6ff0,
+    #eff06f,
+    #f0b26f,
+    #f06fc0,
+    #7ef06f,
+    #6f85f0,
+    #6fbef0
+  );
+  background-size: 1600% 1600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+
+/* .buttonBox {
+  width: 50%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-row: 2 / 4;
+  grid-column: 2 / span 1;
+} */
+
+.buttons {
+  height: 430px;
+  background-color: rgb(80, 60, 209);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+
+.buttons:hover {
+  background-color: rgb(228, 39, 15);
+}
+
+.equals {
+  grid-column: 3 / 5;
+  background-color: rgb(80, 60, 209);
+}
+
+.equals:hover {
+  background-color: rgb(228, 39, 15);
 }
 
 @keyframes App-logo-spin {
